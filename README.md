@@ -17,7 +17,7 @@ Data will be modified such that each row of the SPL file will be assigned a lati
 Hint: I am currently using [GPX Master+](https://itunes.apple.com/us/app/gpx-master+/id414297402?mt=8) and [Multi Measures](https://itunes.apple.com/us/app/multi-measures-all-in-1-measuring/id354112909?mt=8) on my iPhone.
 # bug(s)
 
-1. I think the Heatmap Layer of the Google Maps API adds the weights of nearby points as you zoom out, which means these heatmaps are sort of useless as of yet. I need to find a way to average rather than add.
+1. I think the Heatmap Layer of the Google Maps API adds the weights of nearby points as you zoom out, which means these heatmaps are sort of useless as of yet. I need to find a way to average rather than add. Will probably use something like [Gheat](https://code.google.com/p/gheat/) (let me know if you have any suggestions.)
 
 # todo
 
