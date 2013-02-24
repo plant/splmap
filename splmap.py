@@ -22,6 +22,7 @@ def gpx2array(gpx):
 		lon = float(point.getAttribute('lon'))
 		ptime = point.getElementsByTagName("time")[0].firstChild.nodeValue
 		ptime = time.mktime(dateutil.parser.parse(ptime).timetuple())
+		ptime -= time.altzone
 
 		rows.append([lat, lon, ptime])
 
@@ -40,7 +41,7 @@ def spl2array(spl):
 
 		ptime = datetime.datetime(
 			year, month, day, 
-			int(hour), int(minute), second, microsecond
+			int(hour), int(minute), second, microsecond,
 		).isoformat()
 
 		ptime = time.mktime(dateutil.parser.parse(ptime).timetuple())
