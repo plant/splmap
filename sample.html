@@ -1,0 +1,25 @@
+	<html>
+		<head>
+			<title>SPL Heatmap</title>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
+			<script>
+				var map, pointarray, heatmap;
+				var spldata=[
+					{location: new google.maps.LatLng(33.500478, -112.074098), weight: 78.722800}
+				];
+				function initialize() {
+					var mapOptions = {
+						zoom: 13,
+						center: new google.maps.LatLng(33.500478, -112.074098),
+						mapTypeId: google.maps.MapTypeId.SATELLITE
+					};
+					map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+					heatmap = new google.maps.visualization.HeatmapLayer({data: spldata});
+					heatmap.setMap(map);
+				}
+			</script>
+		</head>
+		<body onload="initialize()">
+			<div id="map_canvas" style="height: 100%; width: 100%; margin: 0; padding: 0"></div>
+		</body>
+	</html>

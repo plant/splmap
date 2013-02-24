@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gpx
+ version="1.0"
+ creator="GPX Master.app"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/0"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <time>2013-02-24T06:09:21Z</time>
+  <trk>
+    <name>GPX Master Track - Feb 23, 2013, 11:09 PM</name>
+    <trkseg>
+      <trkpt lat="33.500478" lon="-112.074098">
+        <ele>336</ele>
+        <time>2013-02-24T06:09:21Z</time>
+      </trkpt>
+      <trkpt lat="33.500438" lon="-112.074069">
+        <ele>337</ele>
+        <time>2013-02-24T06:09:22Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
